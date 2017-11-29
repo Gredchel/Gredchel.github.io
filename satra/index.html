@@ -18,15 +18,13 @@ function sndSwap(newaudio, audiout) {
 	var varnewaudio = "audio" + newaudio;
 	document.getElementById(varnewaudio).muted = audiout;
 	document.getElementById(varnewaudio).play();
-	document.getElementById(varnewaudio).volume = 0.2;
+	document.getElementById(varnewaudio).volume = 0.0;
 }
 </script>
 
 <body><noscript><p class="blink">Ваш браузер не поддерживает скрипты! Часть спецэффектов отключена!</p></noscript>
 
-<div class="header" onMouseOver="sndSwap('02', false)" onMouseOut="sndSwap('02', true)">
-<div id="header2"></div><div id="logo"></div>
-</div>
+<div class="header" onMouseOver="sndSwap('02', false)" onMouseOut="sndSwap('02', true)"><div id="header2"></div><div id="logo"></div></div>
 
 <h1 class="name1 blue1">Электромонтаж</h1>
 

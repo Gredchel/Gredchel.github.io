@@ -119,17 +119,21 @@ from, to {left:-300px; transform:scale(0.1);}
 .side {
 	width: 30%;
 	padding-top: 2vh;
-	padding-left: 3vw;
+	padding-left: 2vw;
 	float: left;
 	font-size: 2.5vh;
 }
 .center2 {
 	width: 100%;
-	padding-top: 8vh;
+	padding-top: 4vh;
 	float: left;
+	padding-bottom: 4vh;
 }
 
-.contact {padding-bottom:2vh;float:left;}
+.contact {
+	padding-bottom: 2vh;
+	float: left;
+}
 .embl, .embl2 {
 	margin-right: 1vw;
 	float: left;
@@ -210,6 +214,7 @@ from, to {left:-300px; transform:scale(0.1);}
 	font-weight: bold;
 	text-align: center;
 	background-image: linear-gradient(90deg,rgba(30,180,240,0.5),rgba(10,30,120,1),rgba(30,180,240,0.5));
+	margin-bottom: 1vh;
 }
 .board {
 	width: 100%;
@@ -220,14 +225,13 @@ from, to {left:-300px; transform:scale(0.1);}
 	height: 12vh;
 	display: inline-block;
 	margin-left: 1vw;
-	margin-top: 2vh;
+	margin-top: 1vh;
 	position: relative;
 	float: left;
 	box-shadow: 0px 0px 10px rgba(30,180,240,0.8);
 	transform-origin: left bottom;
 	transition: 1s 0.3s;
 	cursor: pointer;
-	margin-right: 1vw;
 	margin-bottom: 1vh;
 }
 .board > img:hover {z-index:1; transform: scale(4);}
@@ -297,6 +301,7 @@ td:empty {visibility: hidden;}
 	background-image: linear-gradient(0deg, rgba(0,0,255,0.2),rgba(0,0,255,0.8)),
 	url(../imgs/3.png);
 	animation: side2td 4s linear infinite alternate;
+	border-radius: 2vh;
 }
 td {transition: 1s;}
 td:hover {transform:scale(1.2) skewY(-2deg);}
@@ -338,8 +343,8 @@ td:hover {transform:scale(1.2) skewY(-2deg);}
 	url(../imgs/fon3.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	margin-top: 4vh;
 	padding-top: 2vh;
+	width: 100%;
 }
 .footer .side > a {
 	display: block;

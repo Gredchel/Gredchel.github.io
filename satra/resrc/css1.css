@@ -23,7 +23,7 @@ font-family: 'MistralRegular';
 body {
 	font-family: Dited;
 	color: rgba(30,180,240,1);
-	font-size: 4vmin;
+	font-size: 8vmin;
 	letter-spacing: 0.5vmin;
 	cursor: default;
 	background-image: url(../imgs/1.png);
@@ -32,9 +32,7 @@ body {
 }
 
 
-.green1 {
-	color: rgba(50,200,50,1.00);
-}
+.green1 {color: rgba(50,200,50,1.00);}
 .blue1 {color: rgba(80,160,200,1);}
 .blue2 {color: rgba(70,120,210,1.00);}
 .blue3 {color: #284A7E;}
@@ -47,76 +45,70 @@ body {
 .orange1 {color: #FFAB73;}
 .orange2 {color: #FF8D40;}
 .orange3 {color: #A64300;}
-.orange4 {color: #FF6700;}
+.orange4 {color: rgba(255,103,0,1.00);}
 .red1 {	color: rgba(180,7,7,1.00);}
 .beige1 {color: rgba(240,240,190,1.00);}
 .purple1 {color: rgba(200,0,130,1.00);}
 
 .name1 {
+	font-size: 5vmin;
 	text-align: center;
-	line-height: 5vmin;
 }
 .divflex1, .divflex2 {
 	height: 48vmin;
 	display: flex;
 	justify-content: center;
-	margin-top: -8vmin;
 	overflow: hidden;
 }
-.divflex1 {margin-top: -6vmin;}
-.divflex2 {margin-top: -46vmin;}
+.divflex1 {margin-top: -4vmin;}
+.divflex2 {margin-top: -48vmin;}
 .divflex4 {
 	display: flex;
 	justify-content: center;
-	opacity: 0.3;
-	margin-top: -16vmin;
+	margin-top: -8vmin;
+	opacity: 0.4;
 }
+.divflex4 img {
+	border-style: dotted;
+}
+
 #logo1, #logo2, #logo3  {
 	width: 32vmin;
 	height: 32vmin;
 	box-sizing: border-box;
-	margin-top: 4vmin;
-	margin-right: 4vmin;
-	margin-bottom: 4vmin;
-	margin-left: 4vmin;
+	margin-top: 8vmin;
+	margin-right: 8vmin;
+	margin-bottom: 8vmin;
+	margin-left: 8vmin;
+	font-family: MistralRegular;
 	text-align: center;
+	letter-spacing: normal;
 	border-radius: 50%;
 	animation: rotate1 30s linear infinite;
 }
 #logo1 {
-	box-shadow: 0 0 16vmin 4vmin rgba(255,200,0,0.8);
-	background-image: radial-gradient(rgba(255,200,0,0.0),rgba(255,200,0,1));
+	padding-top: 3vmin;
+	font-size: 5vmin;
+	box-shadow: 0 0 16vmin 2vmin rgba(255,200,0,0.8);
+	background-image: radial-gradient(rgba(255,200,0,0.8),rgba(255,200,0,0.1));
 }
 #logo2 {
-	padding-top: 10vmin;
+	padding-top: 5vmin;
 	opacity: 0;
-	font-size: 5vmin;
-	font-weight: bold;
-	box-shadow: 0 0 16vmin 4vmin rgba(70,120,210,1);
-	background-image: radial-gradient(rgba(30,180,240,0.0),rgba(30,180,240,1.0)), url(../imgs/SP5.png);
+	box-shadow: 0 0 16vmin 2vmin rgba(30,180,240,1);
+	background-image: radial-gradient(rgba(70,120,210,0.0),rgba(70,120,210,1)), url(../imgs/SP2.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	transform:rotate(-45deg);
 	animation-delay: 10s;
 }
 #logo3 {
-	padding-top: 12vmin;
 	opacity: 0;
-	font-size: 8vmin;
-	box-shadow: 0 0 16vmin 4vmin rgba(240,240,190,1.00);
-	background-image: radial-gradient(rgba(240,240,190,0.2),rgba(240,240,190,1.00));
+	font-size: 10vmin;
+	box-shadow: 0 0 16vmin 1vmin rgba(240,240,210,1.00);
+	background-image: radial-gradient(rgba(240,240,210,0.5),rgba(240,240,210,0.2));
 	animation-delay: 20s;
-	padding-left: 2vmin;
 }
-#gemini {
-	margin-top: 4vmin;
-	padding-right: 2vmin;
-	padding-top: 2vmin;
-	padding-bottom: 2vmin;
-	padding-left: 2vmin;
-	font-size: 12vmin;
-	text-align: center;
-}
+#gemini {font-size: 16vmin;}
 .rotate1 {animation: rotate1 30s linear infinite;}
 @keyframes rotate1 {
 from {opacity:1; transform: rotateY(0deg) translate(-200%,0) rotateY(0deg) scale(0.2);}
@@ -140,21 +132,21 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 
 
 .div3d {
-	height: 24vmin;
-	margin-top: -24vmin;
+	height: 40vmin;
+	margin-top: -16vmin;
 	position: relative;
 	overflow: hidden;
-	perspective: 500px;
+	transform-style: preserve-3d;
+	perspective: 600px;
 }
 .spec {
 	width: 100%;
-	margin-top: 8vmin;
 	position: absolute;
-	font-size: 2em;
 	font-style: italic;
+	font-size: 10vmin;
 	text-align: center;
-	transform-style: preserve-3d;
 	animation: 32s linear infinite;
+	padding-top: 16vmin;
 }
 .spec1 {animation-name:spec1;}
 .spec2 {animation-name:spec2;}
@@ -163,13 +155,13 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 10% {opacity:1; transform:rotatey(0deg);}
 30% {opacity:1; transform:rotatey(90deg);}
 30.01% {opacity:0; transform:rotatey(0deg);}
-80% {opacity:0; transform:rotatey(-90deg);}
+80% {opacity:0; transform:rotatey(0deg);}
 80.01% {opacity:1; transform:rotatey(-90deg);}
 100% {opacity:1; transform:rotatey(0deg);}
 }
 @keyframes spec2 {
 0% {opacity:0; transform:rotatey(0deg);}
-30% {opacity:0; transform:rotatey(-90deg);}
+30% {opacity:0; transform:rotatey(0deg);}
 30.01% {opacity:1; transform:rotatey(-90deg);}
 50% {opacity:1; transform:rotatey(0deg);}
 60% {opacity:1; transform:rotatey(0deg);}
@@ -228,6 +220,8 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 	font-size: 6vmin;
 	float: left;
 }
+
+
 .bell:before {content: "\f0f3";}
 .bell2:before {content: "\f0a2";}
 .female:before {content: "\f182";}
@@ -241,8 +235,17 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 .heart2:before {content: "\f08a";}  
 .plane:before {content: "\f072";}
 .trophy:before {content: "\f091";}
+.gemini:before {content: "\f260";}
 .spin {margin-right: 4vmin; animation: spin 8s infinite linear;}
 .spinY {animation: spinY 8s infinite linear;}
-.pulse {animation:fa-spin 1s infinite steps(8);}
+.pulse {animation: spinY 4s infinite steps(24);}
 @keyframes spin {0% {transform:rotate(0deg);} 100% {transform:rotate(360deg);}}
 @keyframes spinY {0% {transform:rotateY(0deg);} 100% {transform:rotateY(360deg);}}
+
+#footer {
+	height: 10vmin;
+	opacity: 0.6;
+	background-image: url(../imgs/3.png);
+	background-repeat: repeat-x;
+	background-size: contain;
+}

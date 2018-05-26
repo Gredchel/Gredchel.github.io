@@ -137,7 +137,7 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 	position: relative;
 	overflow: hidden;
 	transform-style: preserve-3d;
-	perspective: 600px;
+	perspective: 100vmin;
 }
 .spec {
 	width: 100%;
@@ -194,7 +194,7 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 #congr5 {animation: congr 12s 16s linear infinite alternate;}
 @keyframes congr {
 0% {opacity:0; font-size:0;}
-100% {opacity:1; font-size:10vmin;}
+100% {opacity:1; font-size:8vmin;}
 }
 .icon {
 	font-family: FontAwesome, monospace;
@@ -244,6 +244,8 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 
 #footer {
 	height: 10vmin;
+	margin-top: -8vmin;
+
 	opacity: 0.6;
 	background-image: url(../imgs/3.png);
 	background-repeat: repeat-x;

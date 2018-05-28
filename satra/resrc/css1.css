@@ -46,7 +46,7 @@ body {
 .orange2 {color: #FF8D40;}
 .orange3 {color: #A64300;}
 .orange4 {color: rgba(255,103,0,1.00);}
-.red1 {	color: rgba(180,7,7,1.00);}
+.red1 {	color: rgba(255,0,0,1.00);}
 .beige1 {color: rgba(240,240,190,1.00);}
 .purple1 {color: rgba(200,0,130,1.00);}
 
@@ -65,7 +65,6 @@ body {
 .divflex4 {
 	display: flex;
 	justify-content: center;
-	margin-top: -8vmin;
 	opacity: 0.4;
 }
 .divflex4 img {
@@ -96,7 +95,7 @@ body {
 	padding-top: 5vmin;
 	opacity: 0;
 	box-shadow: 0 0 16vmin 2vmin rgba(30,180,240,1);
-	background-image: radial-gradient(rgba(70,120,210,0.0),rgba(70,120,210,1)), url(../imgs/SP2.png);
+	background-image: radial-gradient(rgba(70,120,210,0.0),rgba(30,180,240,1)), url(../imgs/SP2.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	animation-delay: 10s;
@@ -137,7 +136,7 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 	position: relative;
 	overflow: hidden;
 	transform-style: preserve-3d;
-	perspective: 100vmin;
+	perspective: 600px;
 }
 .spec {
 	width: 100%;
@@ -145,7 +144,7 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 	font-style: italic;
 	font-size: 10vmin;
 	text-align: center;
-	animation: 32s linear infinite;
+	animation: 24s linear infinite;
 	padding-top: 16vmin;
 }
 .spec1 {animation-name:spec1;}
@@ -182,19 +181,22 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 	padding-bottom: 0px;
 	padding-left: 0px;
 	overflow: hidden;
-	font-size: 0px;
 	font-style: italic;
 	text-align: center;
 	list-style-type: none;
 }
-#congr1 {animation: congr 12s 0s linear infinite alternate;}
-#congr2 {animation: congr 12s 4s linear infinite alternate;}
-#congr3 {animation: congr 12s 8s linear infinite alternate;}
-#congr4 {animation: congr 12s 12s linear infinite alternate;}
-#congr5 {animation: congr 12s 16s linear infinite alternate;}
+#congr1, #congr2, #congr3, #congr4, #congr5 {
+	font-size:0;
+	animation: congr 8s linear infinite alternate;
+}
+#congr1 {animation-delay: 0s;}
+#congr2 {animation-delay: 3s;}
+#congr3 {animation-delay: 6s;}
+#congr4 {animation-delay: 9s;}
+#congr5 {animation-delay: 12s;}
 @keyframes congr {
 0% {opacity:0; font-size:0;}
-100% {opacity:1; font-size:8vmin;}
+100% {opacity:1; font-size:1.2em;}
 }
 .icon {
 	font-family: FontAwesome, monospace;
@@ -244,8 +246,6 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 
 #footer {
 	height: 10vmin;
-	margin-top: -8vmin;
-
 	opacity: 0.6;
 	background-image: url(../imgs/3.png);
 	background-repeat: repeat-x;

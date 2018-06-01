@@ -21,6 +21,7 @@ font-family: 'MistralRegular';
 }
 
 body {
+	overflow-x: hidden;
 	font-family: Dited;
 	color: rgba(30,180,240,1);
 	font-size: 8vmin;
@@ -60,15 +61,15 @@ body {
 	justify-content: center;
 	overflow: hidden;
 }
-.divflex1 {margin-top: -4vmin;}
 .divflex2 {margin-top: -48vmin;}
 .divflex4 {
 	display: flex;
 	justify-content: center;
 	opacity: 0.4;
+	margin-top: 32vmin;
 }
 .divflex4 img {
-	border-style: dotted;
+	border: dotted rgba(200,40,40,1);
 }
 
 #logo1, #logo2, #logo3  {
@@ -97,12 +98,12 @@ body {
 	box-shadow: 0 0 16vmin 2vmin rgba(30,180,240,1);
 	background-image: radial-gradient(rgba(70,120,210,0.0),rgba(30,180,240,1)), url(../imgs/SP2.png);
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
 	animation-delay: 10s;
+	background-size: contain;
 }
 #logo3 {
+	padding-top: 5vmin;
 	opacity: 0;
-	font-size: 10vmin;
 	box-shadow: 0 0 16vmin 1vmin rgba(240,240,210,1.00);
 	background-image: radial-gradient(rgba(240,240,210,0.5),rgba(240,240,210,0.2));
 	animation-delay: 20s;
@@ -131,21 +132,20 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 
 
 .div3d {
-	height: 40vmin;
-	margin-top: -16vmin;
+	height: 32vmin;
 	position: relative;
 	overflow: hidden;
 	transform-style: preserve-3d;
-	perspective: 600px;
+	perspective: 60vw;
 }
 .spec {
-	width: 100%;
+	width:100%;
 	position: absolute;
 	font-style: italic;
 	font-size: 10vmin;
 	text-align: center;
 	animation: 24s linear infinite;
-	padding-top: 16vmin;
+	padding-top: 8vmin;
 }
 .spec1 {animation-name:spec1;}
 .spec2 {animation-name:spec2;}
@@ -172,7 +172,7 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 
 #ul-congr {
 	height: 40vmin;
-	margin-top: 0vmin;
+	margin-top: 12vmin;
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
@@ -215,12 +215,13 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 .ul2 li {
 	list-style-type: none;
 	text-align: center;
-	margin-top: 2vmin;
-	margin-bottom: 2vmin;
-	margin-right: 2vmin;
-	margin-left: 2vmin;
+	margin-top: 3vmin;
+	margin-bottom: 3vmin;
+	margin-right: 3vmin;
+	margin-left: 3vmin;
 	font-size: 6vmin;
 	float: left;
+	transform-origin: center right;
 }
 
 
@@ -250,4 +251,58 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 	background-image: url(../imgs/3.png);
 	background-repeat: repeat-x;
 	background-size: contain;
+}
+
+#cube {
+	display: flex;
+	justify-content: center;
+	perspective: 800px;
+	margin-top: 16vmin;
+}
+#cube3d {
+	width: 30vmin;
+	height: 30vmin;
+	position: relative;
+	transform-origin:center center 15vmin;
+	transform-style:preserve-3d;
+	animation: rotcube 16s linear infinite;
+}
+
+
+.side {
+	width: 30vmin;
+	height: 30vmin;
+	box-sizing: border-box;
+	position: absolute;
+	border: 1vmin outset rgba(30,180,240,1);
+	background-repeat: no-repeat;
+	transform-origin: center center 15vmin;
+	background-size: 100% 100%;
+}
+@keyframes rotcube {
+	from {transform: rotateX(0deg) rotateY(0deg)  rotateZ(0deg);}
+	to {transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+}
+#side1 {
+	background-image: url(../imgs/SP5.png);
+}
+#side2 {
+	transform:rotateY(90deg);
+	background-image: url(../imgs/5.png);
+}
+#side3 {
+	transform:rotateY(-90deg);
+	background-image: url(../imgs/6.png);
+}
+#side4 {
+	transform:rotateX(90deg);
+	background-image: url(../imgs/7.png);
+}
+#side5 {
+	transform:rotateX(-90deg);
+	background-image: url(../imgs/8.png);
+}
+#side6 {
+	transform:rotateY(180deg);
+	background-image: url(../imgs/9.png);
 }

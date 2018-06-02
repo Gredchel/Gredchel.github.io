@@ -278,9 +278,11 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 	border: 1vmin outset rgba(30,180,240,1);
 	background-repeat: no-repeat;
 	transform-origin: center center 20vmin;
-	background-size: 100% 100%;
 	text-align: center;
 	line-height: 12vmin;
+	font-style: italic;
+	background-origin: content-box;
+	background-size: 100% auto;
 }
 @keyframes rotcube {
 	from {transform: rotateX(0deg) rotateY(0deg)  rotateZ(0deg);}
@@ -291,19 +293,28 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 #side2 {
 	transform:rotateY(90deg);
 	background-image: url(../imgs/7.png);
+	padding-top: 4vmin;
+	padding-right: 4vmin;
+	padding-bottom: 4vmin;
+	padding-left: 4vmin;
 }
 #side3 {
-	transform:rotateY(-90deg);
+	transform: rotateY(-90deg);
 	background-image: url(../imgs/7.png);
+	padding-top: 4vmin;
+	padding-right: 4vmin;
+	padding-bottom: 4vmin;
+	padding-left: 4vmin;
 }
 #side4 {
 	transform:rotateX(90deg);
-	background-image: url(../imgs/8.png);
+	background-image: url(../imgs/6.png);
 }
 #side5 {
 	transform:rotateX(-90deg);
-	background-image: url(../imgs/8.png);
+	background-image: url(../imgs/6.png);
 }
 #side6 {
 	transform:rotateY(180deg);
+	background-image: url(../imgs/5.png);
 }

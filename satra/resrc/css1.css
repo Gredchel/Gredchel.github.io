@@ -171,15 +171,15 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 
 
 #ul-congr {
-	height: 40vmin;
+	height: 48vmin;
 	margin-top: 12vmin;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	padding-top: 2vmin;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
 	overflow: hidden;
 	font-style: italic;
 	text-align: center;
@@ -187,6 +187,7 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 }
 #congr1, #congr2, #congr3, #congr4, #congr5 {
 	font-size:0;
+	overflow: hidden;
 	animation: congr 8s linear infinite alternate;
 }
 #congr1 {animation-delay: 0s;}
@@ -257,46 +258,47 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 	display: flex;
 	justify-content: center;
 	perspective: 800px;
-	margin-top: 16vmin;
+	margin-top: 8vmin;
 }
 #cube3d {
-	width: 30vmin;
-	height: 30vmin;
+	width: 40vmin;
+	height: 40vmin;
 	position: relative;
-	transform-origin:center center 15vmin;
+	transform-origin:center center 20vmin;
 	transform-style:preserve-3d;
 	animation: rotcube 16s linear infinite;
 }
 
 
 .side {
-	width: 30vmin;
-	height: 30vmin;
+	width: 40vmin;
+	height: 40vmin;
 	box-sizing: border-box;
 	position: absolute;
 	border: 1vmin outset rgba(30,180,240,1);
 	background-repeat: no-repeat;
-	transform-origin: center center 15vmin;
+	transform-origin: center center 20vmin;
 	background-size: 100% 100%;
+	text-align: center;
+	line-height: 12vmin;
 }
 @keyframes rotcube {
 	from {transform: rotateX(0deg) rotateY(0deg)  rotateZ(0deg);}
 	to {transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
 }
 #side1 {
-	background-image: url(../imgs/SP5.png);
 }
 #side2 {
 	transform:rotateY(90deg);
-	background-image: url(../imgs/5.png);
+	background-image: url(../imgs/7.png);
 }
 #side3 {
 	transform:rotateY(-90deg);
-	background-image: url(../imgs/6.png);
+	background-image: url(../imgs/7.png);
 }
 #side4 {
 	transform:rotateX(90deg);
-	background-image: url(../imgs/7.png);
+	background-image: url(../imgs/8.png);
 }
 #side5 {
 	transform:rotateX(-90deg);
@@ -304,5 +306,4 @@ to {opacity:1; transform: rotateY(360deg) translate(-200%,0) rotateY(-360deg) sc
 }
 #side6 {
 	transform:rotateY(180deg);
-	background-image: url(../imgs/9.png);
 }
